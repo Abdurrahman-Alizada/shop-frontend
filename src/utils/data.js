@@ -121,22 +121,22 @@ const ctaCardData = [
   {
     id: 1,
     title: 'Taste of',
-    subTitle: 'Fresh & Natural',
-    image: '/cta/cta-bg-1.jpg',
+    subTitle: 'Crafted Elegance',
+    image: '/cta/cta-bg-22.jpg',
     url: '/search?category=fresh-vegetable',
   },
   {
     id: 2,
     title: 'Taste of',
-    subTitle: 'Fish & Meat',
-    image: '/cta/cta-bg-2.jpg',
+    subTitle: 'Silver Whispers',
+    image: '/cta/cta-bg-33.jpg',
     url: '/search?Category=fish--meat',
   },
   {
     id: 3,
     title: 'Taste of',
-    subTitle: 'Bread & Bakery',
-    image: '/cta/cta-bg-3.jpg',
+    subTitle: 'Artisan Gems',
+    image: '/cta/cta-bg-11.jpg',
     url: '/search?Category=biscuits--cakes',
   },
 ];

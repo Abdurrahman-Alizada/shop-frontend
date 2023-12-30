@@ -16,7 +16,7 @@ const Card = () => {
           <Link href={item.url}>
             <a className="block">
               <Image
-                layout="responsive"
+                layout="intrinsic"
                 width={550}
                 height={234}
                 src={item.image}

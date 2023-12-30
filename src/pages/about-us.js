@@ -86,7 +86,7 @@ const AboutUs = () => {
             />
           </div>
         </div>
-        <div className="bg-gray-50 lg:py-20 py-10">
+        {/* <div className="bg-gray-50 lg:py-20 py-10">
           <div className="max-w-screen-2xl mx-auto px-3 sm:px-10">
             <div className="relative flex flex-col sm:flex-row sm:items-end justify-between mb-8">
               <div className="max-w-2xl">
@@ -114,7 +114,7 @@ const AboutUs = () => {
                   </span>
                 </div>
               </div>
-              {/* <div className="max-w-sm">
+              <div className="max-w-sm">
                 <Image
                   width={420}
                   height={420}
@@ -178,10 +178,10 @@ const AboutUs = () => {
                   <h5 className="text-lg font-semibold font-serif">Melvin Davis</h5>
                   <span className="opacity-75 text-sm">{t("common:lead-developer")}</span>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );
