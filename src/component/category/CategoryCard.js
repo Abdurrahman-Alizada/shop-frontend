@@ -55,31 +55,34 @@ const CategoryCard = ({ title, icon, nested, id }) => {
 
   return (
     <>
-      <a
-        onClick={() => showCategory(id, title)}
-        className="p-2 flex items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600"
-        role="button"
-      >
-        {icon ? (
-          <Image src={icon} width={18} height={18} alt="Category" />
-        ) : (
-          <Image
-            src="https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
-            width={18}
-            height={18}
-            alt="category"
-          />
+      <div className="flex justify-between items-center">
+        <a
+          onClick={() => showCategory(id, title)}
+          role="button"
+          className="-m-3 w-full flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
+        >
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
+            {icon ? (
+              <Image src={icon} width={28} height={28} alt="Category" />
+            ) : (
+              <Image
+                src="https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
+                width={28}
+                height={28}
+                alt="category"
+              />
+            )}
+          </div>
+          <div className="ml-4 inline-flex items-center justify-between w-full">
+            <p className="text-sm font-medium text-gray-900">{title}</p>
+          </div>
+        </a>
+        {nested?.length > 0 && (
+          <span onClick={()=>setShow(!show)} className="transition duration-700 ease-in-out inline-flex loading-none items-end text-gray-400">
+            {show ? <IoChevronDownOutline /> : <IoChevronForwardOutline />}
+          </span>
         )}
-
-        <div className="inline-flex items-center justify-between ml-3 text-sm font-medium w-full hover:text-emerald-600">
-          {title}
-          {nested?.length > 0 && (
-            <span className="transition duration-700 ease-in-out inline-flex loading-none items-end text-gray-400">
-              {show ? <IoChevronDownOutline /> : <IoChevronForwardOutline />}
-            </span>
-          )}
-        </div>
-      </a>
+      </div>
       {show && nested.length > 0 && (
         <ul className="pl-6 pb-3 pt-1 -mt-1">
           {nested.map((children) => (
@@ -130,7 +133,6 @@ const CategoryCard = ({ title, icon, nested, id }) => {
                 </a>
               )}
 
-              {/* sub children category */}
               {showSubCategory.id === children._id &&
               showSubCategory.show === true ? (
                 <ul className="pl-6 pb-3">

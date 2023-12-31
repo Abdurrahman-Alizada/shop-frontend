@@ -27,12 +27,12 @@ const Search = ({ products, attributes }) => {
   return (
     <Layout title="Search" description="This is search page">
       <div className="mx-auto max-w-screen-2xl px-3 sm:px-10">
-        <div className="flex py-10 lg:py-12">
+        <div className="flex py-10 lg:pb-12">
           <div className="flex w-full">
             <div className="w-full">
-              <div className="w-full grid grid-col gap-4 grid-cols-1 2xl:gap-6 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2">
+              {/* <div className="w-full grid grid-col gap-4 grid-cols-1 2xl:gap-6 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2">
                 <Card />
-              </div>
+              </div> */}
               <div className="relative">
                 <CategoryCarousel />
               </div>

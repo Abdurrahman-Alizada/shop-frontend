@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { useCart } from "react-use-cart";
 import { IoSearchOutline } from "react-icons/io5";
-import { FiShoppingCart, FiUser, FiBell } from "react-icons/fi";
+import { FiShoppingCart, FiUser,FiLogIn, FiBell } from "react-icons/fi";
 import useTranslation from "next-translate/useTranslation";
 
 //internal import
@@ -50,14 +50,21 @@ const Navbar = () => {
   return (
     <>
       <CartDrawer />
-      {modalOpen && <LoginModal modalOpen={modalOpen} setModalOpen={setModalOpen} />}
+      {modalOpen && (
+        <LoginModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
+      )}
 
-      <div className="bg-stone-600 sticky top-0 z-20">
+      <div className="bg-background sticky top-0 z-20">
         <div className="max-w-screen-2xl mx-auto px-3 sm:px-10">
           <div className="top-bar h-16 lg:h-auto flex items-center justify-between py-4 mx-auto">
             <Link href="/">
               <a className="mr-3 lg:mr-8 xl:mr-12 hidden md:hidden lg:block">
-                <Image width={140} height={56} src="/logo/logo-light-2.svg" alt="logo" />
+                <Image
+                  width={140}
+                  height={56}
+                  src="/logo/logo-light-2.svg"
+                  alt="logo"
+                />
               </a>
             </Link>
             <div className="w-full transition-all duration-200 ease-in-out lg:flex lg:max-w-[520px] xl:max-w-[750px] 2xl:max-w-[900px] md:mx-12 lg:mx-4 xl:mx-0">
@@ -87,22 +94,29 @@ const Navbar = () => {
               </div>
             </div>
             <div className="hidden md:hidden md:items-center lg:flex xl:block absolute inset-y-0 right-0 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <button className="pr-5 text-lime-300 text-2xl font-bold" aria-label="Alert">
+              <button
+                className="pr-5 text-white hover:text-lime-300 text-2xl font-bold"
+                aria-label="Alert"
+              >
                 <FiBell className="w-6 h-6 drop-shadow-xl" />
               </button>
               <button
                 aria-label="Total"
                 onClick={toggleCartDrawer}
-                className="relative px-5 text-lime-300 text-2xl font-bold"
+                className="relative px-5 text-white hover:text-lime-300 text-2xl font-bold"
               >
                 <span className="absolute z-10 top-0 right-0 inline-flex items-center justify-center p-1 h-5 w-5 text-xs font-medium leading-none text-red-100 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 rounded-full">
                   {totalItems}
                 </span>
                 <FiShoppingCart className="w-6 h-6 drop-shadow-xl" />
               </button>
+
               {/* Profile dropdown */}
 
-              <button className="pl-5 text-lime-300 text-2xl font-bold" aria-label="Login">
+              <button
+                className="pl-5 text-white hover:text-lime-300 text-2xl font-bold"
+                aria-label="Login"
+              >
                 {imageUrl || userInfo?.image ? (
                   <Link href="/user/dashboard">
                     <a className="relative top-1 w-6 h-6">
@@ -117,7 +131,13 @@ const Navbar = () => {
                   </Link>
                 ) : userInfo?.name ? (
                   <Link href="/user/dashboard">
-                    <a className="leading-none font-bold font-serif block">{userInfo?.name[0]}</a>
+                    <div class="flex items-center justify-center w-12 h-12 drop-shadow-xl bg-teal-500 rounded-full">
+                      <FiUser className="w-6 h-6 drop-shadow-xl" />
+                    </div>
+
+                    {/* <a className="leading-none font-bold font-serif block">
+                      {userInfo?.name[0]}
+                    </a> */}
                   </Link>
                 ) : (
                   <span onClick={() => setModalOpen(!modalOpen)}>

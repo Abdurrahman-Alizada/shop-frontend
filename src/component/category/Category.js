@@ -21,7 +21,7 @@ const Category = () => {
   );
 
   return (
-    <div className="flex flex-col w-full h-full bg-white cursor-pointer sct">
+    <div className="flex flex-col w-full h-full bg-gray-100 cursor-pointer">
       {categoryDrawerOpen && (
         <div className="w-full flex justify-between items-center h-16 px-6 py-4 bg-stone-600 text-white border-b border-gray-100">
           <h2 className="font-semibold font-serif text-lg m-0 text-heading flex align-center">
@@ -45,7 +45,7 @@ const Category = () => {
           </button>
         </div>
       )}
-      <div className="overflow-y-scroll scrollbar-hide w-full max-h-full">
+      <div className="w-full max-h-full">
         {categoryDrawerOpen && (
           <h2 className="font-semibold font-serif text-lg m-0 text-heading flex align-center border-b px-8 py-3">
             All Categories

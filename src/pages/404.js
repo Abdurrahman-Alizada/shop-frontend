@@ -7,7 +7,7 @@ const NotFound = () => {
   return (
     <>
       <Head>
-        <title>Today Fruit Store | 404</title>
+        <title>Naginay - Handmade jewelry shop | 404</title>
         <meta name="description" content="This is page not found 404 page" />
         <link rel="icon" href="/favicon.png" />
       </Head>

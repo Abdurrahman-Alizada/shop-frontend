@@ -21,12 +21,14 @@ const Card = () => {
                 height={234}
                 src={item.image}
                 alt={item.title}
-                className="object-cover"
+                className="object-cover rounded-lg"
               />
               <div className="absolute top-0 left-0 z-10 p-r-16 flex-col flex w-full text-center justify-center">
-                <div className="pt-4">
+                {/* <div className="pt-4"> */}
+                <div className="">
                   <h2 className="font-serif text-base sm:text-lg md:text-lg lg:text-lg font-semibold text-gray-100">
-                    {item.title} <br />
+                    {/* {item.title}  */}
+                    <br />
                     <span className="text-lg sm:text-2xl md:text-2xl lg:text-2xl font-bold text-white">
                       {item.subTitle}
                     </span>
@@ -34,7 +36,7 @@ const Card = () => {
                   <p className="text-sm font-sans text-gray-50">
                     Weekend discount offer
                   </p>
-                  <button className="hidden sm:block lg:block text-xs mx-auto leading-6 font-serif font-medium mt-4 px-4 py-1 bg-emerald-500 text-center rounded-full text-white hover:bg-emerald-600">
+                  <button className=" sm:block lg:block text-xs mx-auto leading-6 font-serif font-medium mt-4 px-4 py-1 bg-emerald-500 text-center rounded-full text-white hover:bg-emerald-600">
                     Shop Now
                   </button>
                 </div>

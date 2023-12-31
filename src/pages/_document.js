@@ -12,20 +12,20 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.png" />
           <meta
             property="og:title"
-            content="Today Fruit Store"
+            content="Naginay - Handmade jewelry Shop"
           />
           <meta property="og:type" content="eCommerce Website" />
           <meta
             property="og:description"
-            content="Today Fruit Store"
+            content="Naginay - Handmade jewelry Shop"
           />
           <meta
             property="og:url"
-            content="https://todayfruit-store.vercel.app/"
+            content="https://naginay.shop/"
           />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/ahossain/image/upload/v1636729752/facebook-page_j7alju.png"
+            content="https://naginay.shop/logo/logo-light-2.svg"
           />
         </Head>
         <body>

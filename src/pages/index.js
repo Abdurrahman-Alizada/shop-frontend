@@ -7,6 +7,7 @@ import useTranslation from "next-translate/useTranslation";
 import Layout from "@layout/Layout";
 import Banner from "@component/banner/Banner";
 import CardTwo from "@component/cta-card/CardTwo";
+import Card from "@component/cta-card/Card";
 import OfferCard from "@component/offer/OfferCard";
 import StickyCart from "@component/cart/StickyCart";
 import ProductServices from "@services/ProductServices";
@@ -109,8 +110,15 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               </div>
             </div> */}
 
+            {/* discount banner card */}
+            <div className="mx-auto max-w-screen-2xl px-4 sm:px-10">
+              <div className="mx-auto mt-8 max-w-screen-2xl w-full grid grid-col gap-4 grid-cols-1 2xl:gap-6 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2">
+                <Card />
+              </div>
+            </div>
+
             {/* discounted products */}
-            {/* <div
+            <div
               id="discount"
               className="bg-gray-50 lg:py-16 py-10 mx-auto max-w-screen-2xl px-3 sm:px-10"
             >
@@ -137,7 +145,7 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </Layout>
       )}

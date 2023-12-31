@@ -3,8 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import useTranslation from "next-translate/useTranslation";
-import { FacebookIcon, LinkedinIcon, PinterestIcon, TwitterIcon, WhatsappIcon } from "react-share";
-
+import {
+  FacebookIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  TwitterIcon,
+  WhatsappIcon,
+} from "react-share";
+import {mobileNumber} from '../../utils/mobileNumber'
 //internal import
 import { UserContext } from "@context/UserContext";
 
@@ -116,7 +122,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="flex items-baseline">
-                <Link href={`${userInfo?.email ? "/user/update-profile" : "#"}`}>
+                <Link
+                  href={`${userInfo?.email ? "/user/update-profile" : "#"}`}
+                >
                   <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
                     {t("common:footer-my-account-updatedProfile")}
                   </a>
@@ -127,7 +135,12 @@ const Footer = () => {
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
             <Link href="/">
               <a className="mr-3 lg:mr-12 xl:mr-12" rel="noreferrer">
-                <Image width={140} height={56} src="/logo/logo-dark-2.svg" alt="logo" />
+                <Image
+                  width={140}
+                  height={56}
+                  src="/logo/logo-dark-2.svg"
+                  alt="logo"
+                />
               </a>
             </Link>
             <p className="leading-7 font-sans text-sm text-gray-600 mt-3">
@@ -149,7 +162,7 @@ const Footer = () => {
                 {t("common:footer-follow-us")}
               </span>
               <ul className="text-sm flex">
-                {/* <li className="flex items-center mr-3 transition ease-in-out duration-500">
+                <li className="flex items-center mr-3 transition ease-in-out duration-500">
                   <Link href="https://www.facebook.com">
                     <a
                       aria-label="Social Link"
@@ -184,9 +197,9 @@ const Footer = () => {
                       <PinterestIcon size={34} round />
                     </a>
                   </Link>
-                </li> */}
+                </li>
                 <li className="flex items-center  mr-3 transition ease-in-out duration-500">
-                  <Link href="https://www.linkedin.com/in/tranhongtri/">
+                  <Link href="https://www.linkedin.com">
                     <a
                       aria-label="Social Link"
                       rel="noreferrer"
@@ -200,17 +213,35 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-span-1 text-center hidden lg:block md:block">
-              <p className="text-base leading-7 font-medium block">{t("common:footer-call-us")}</p>
-              <h5 className="text-2xl font-bold text-emerald-500 leading-7">0333-333-333</h5>
+              <p className="text-base leading-7 font-medium block">
+                {t("common:footer-call-us")}
+              </p>
+              <h5 className="text-2xl font-bold text-emerald-500 leading-7">
+                {mobileNumber}
+              </h5>
             </div>
             <div className="col-span-1 hidden lg:block md:block">
               <ul className="lg:text-right">
                 <li className="px-1 mb-2 md:mb-0 transition hover:opacity-80 inline-flex">
                   <Image
-                    width={274}
-                    height={85}
+                    width={120}
+                    height={25}
                     className="w-full"
-                    src="/payment-method/payment-logo.png"
+                    src="/payment-method/easypaisa-payment-logo.png"
+                    alt="payment method"
+                  />
+                  <Image
+                    width={35}
+                    height={25}
+                    className="w-full"
+                    src="/payment-method/mastercard-payment-logo.png"
+                    alt="payment method"
+                  />
+                  <Image
+                    width={56}
+                    height={25}
+                    className="w-full"
+                    src="/payment-method/jazzcash-payment-logo.png"
                     alt="payment method"
                   />
                 </li>
@@ -224,8 +255,12 @@ const Footer = () => {
         <p className="text-sm text-gray-500 leading-6">
           Copyright 2023 @{" "}
           <Link href="https://todayfruit-store.vercel.app/">
-            <a target="_blank" rel="noopener noreferrer" className="text-emerald-500">
-              Today Fruit
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-500"
+            >
+              naginay.shop
             </a>
           </Link>
           , All rights reserved.

@@ -1,0 +1,1 @@
+export const mobileNumber = "+92 316 1921936"

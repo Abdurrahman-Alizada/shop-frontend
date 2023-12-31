@@ -8,6 +8,7 @@ import LoginModal from "@component/modal/LoginModal";
 import { UserContext } from "@context/UserContext";
 import Cookies from "js-cookie";
 import dynamic from "next/dynamic";
+import {mobileNumber} from '../../utils/mobileNumber';
 
 const NavBarTop = () => {
   const { t } = useTranslation();
@@ -40,17 +41,17 @@ const NavBarTop = () => {
         <LoginModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
       )}
 
-      <div className="hidden lg:block bg-stone-600">
+      <div className="hidden lg:block bg-background">
         <div className="max-w-screen-2xl mx-auto px-3 sm:px-10">
-          <div className="text-gray-100 py-2 font-sans text-xs font-medium border-b border-stone-500 flex justify-between items-center">
+          <div className="text-gray-100 py-2 font-sans text-xs font-medium border-b border-stone-300 flex justify-between items-center">
             <span className="flex items-center">
               <FiPhoneCall className="mr-2" />
               {t("common:Call Us")}
               <a
-                href="tel:0333333333"
+                href={`tel:${mobileNumber}`}
                 className="font-bold text-lime-300 ml-1"
               >
-                0333333333
+                {mobileNumber}
               </a>
             </span>
 
@@ -72,7 +73,7 @@ const NavBarTop = () => {
 
               <button
                 onClick={handleModal}
-                className="font-bold text-lime-300 hover:text-lime-400"
+                className="font-bold  hover:text-lime-300"
               >
                 {t("common:My account")}
               </button>
@@ -82,7 +83,7 @@ const NavBarTop = () => {
                   {" "}
                   <button
                     onClick={handleLogOut}
-                    className="flex items-center text-lime-300 font-bold hover:text-lime-400"
+                    className="flex items-center font-bold hover:text-lime-300"
                   >
                     <span className="mr-1">
                       <FiUser />
@@ -95,7 +96,7 @@ const NavBarTop = () => {
                   {" "}
                   <button
                     onClick={() => setModalOpen(!modalOpen)}
-                    className="flex items-center font-bold text-lime-300 hover:text-lime-400"
+                    className="flex items-center font-bold hover:text-lime-300"
                   >
                     <span className="mr-1">
                       <FiUser />

@@ -27,6 +27,9 @@ module.exports = {
         "cta-2": "url('/cta/cta-bg-2.png')",
         "cta-3": "url('/cta/cta-bg-3.png')",
       },
+      colors:{
+        "background":"#00796B"
+      }
     },
   },
   plugins: [

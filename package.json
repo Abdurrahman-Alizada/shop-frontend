@@ -1,8 +1,8 @@
 {
   "name": "todayfruit-store",
   "version": "0.1.0",
-  "description": "Today Fruit Store",
-  "homepage": "https://todayfruit-store.vercel.app/",
+  "description": "naginay - handmade jewelry shop",
+  "homepage": "https://naginay.shop",
   "private": true,
   "scripts": {
     "dev": "next dev",

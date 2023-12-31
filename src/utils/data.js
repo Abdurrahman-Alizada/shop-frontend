@@ -121,23 +121,23 @@ const ctaCardData = [
   {
     id: 1,
     title: 'Taste of',
-    subTitle: 'Crafted Elegance',
-    image: '/cta/cta-bg-22.jpg',
-    url: '/search?category=fresh-vegetable',
+    subTitle: 'Artisan Gems',
+    image: '/cta/cta-bg-1.png',
+    url: '/search?Category=biscuits--cakes',
   },
   {
     id: 2,
     title: 'Taste of',
-    subTitle: 'Silver Whispers',
-    image: '/cta/cta-bg-33.jpg',
-    url: '/search?Category=fish--meat',
+    subTitle: 'Crafted Elegance',
+    image: '/cta/cta-bg-2.png',
+    url: '/search?category=fresh-vegetable',
   },
   {
     id: 3,
     title: 'Taste of',
-    subTitle: 'Artisan Gems',
-    image: '/cta/cta-bg-11.jpg',
-    url: '/search?Category=biscuits--cakes',
+    subTitle: 'Silver Whispers',
+    image: '/cta/cta-bg-3.png',
+    url: '/search?Category=fish--meat',
   },
 ];
 
@@ -174,7 +174,7 @@ const contactData = [
     title: 'contact-page-box1-title',
     info: 'contact-page-box1-info',
     icon: FiMail,
-    contact: 'tranhongtri@gmail.com',
+    contact: 'suddais2017@gmail.com',
     className: 'bg-emerald-100',
   },
   {
@@ -182,7 +182,7 @@ const contactData = [
     title: 'contact-page-box2-title',
     info: 'contact-page-box2-info',
     icon: FiPhoneCall,
-    contact: '0333-333-333',
+    contact: '+92 316 1921936',
     className: 'bg-yellow-100',
   },
   {
