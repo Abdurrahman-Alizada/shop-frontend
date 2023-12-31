@@ -32,6 +32,7 @@ module.exports = withPWA({
       "lh3.googleusercontent.com",
       "",
       "images.dashter.com",
+      "naginay.shop"
     ],
   },
 
