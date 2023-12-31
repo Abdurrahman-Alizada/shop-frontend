@@ -30,10 +30,11 @@ module.exports = withPWA({
       "lh3.googleusercontent.com",
       "res.cloudinary.com",
       "lh3.googleusercontent.com",
-      "",
-      "images.dashter.com",
-      "naginay.shop"
+      "naginay.shop",
+      "*",
     ],
+    unoptimized: true,
+   
   },
 
   ...nextTranslate(),
