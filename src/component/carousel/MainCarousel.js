@@ -43,6 +43,7 @@ const MainCarousel = () => {
                 src={item.image}
                 alt={item.title}
                 className="object-cover"
+                unoptimized
               />
             </div>
             <div className="absolute top-0 left-0 z-10 p-r-16 flex-col flex w-full h-full place-items-start justify-center">
