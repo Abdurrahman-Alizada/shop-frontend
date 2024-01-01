@@ -283,7 +283,8 @@ const InvoiceForDownload = ({ data, currency, globalSetting }) => {
                 }}
               >
                 <Image
-                  src="https://res.cloudinary.com/ahossain/image/upload/v1681454665/logo/logo-color_qw1trc.png"
+                  src={"/logo/logo-dark.png"}
+                  // src="https://res.cloudinary.com/ahossain/image/upload/v1681454665/logo/logo-color_qw1trc.png"
                   alt="Invoice"
                   style={{ width: 80, textAlign: "right" }}
                 />
