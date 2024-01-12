@@ -8,7 +8,7 @@ const DefaultSeo = () => {
       openGraph={{
         type: 'website',
         locale: 'en_IE',
-        url: 'https://todayfruit-store.vercel.app/',
+        url: 'https://naginay.shop/',
         site_name:
           'naginay - handmade jewlry shop',
       }}
