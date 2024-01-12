@@ -257,7 +257,7 @@ const NavbarPromo = () => {
           </div>
           <div className="flex">
             {/* flag */}
-            <div className="dropdown">
+            {/* <div className="dropdown">
               <div
                 className={`flot-l flag ${currentLang?.flag?.toLowerCase()}`}
               ></div>
@@ -280,7 +280,7 @@ const NavbarPromo = () => {
                   );
                 })}
               </div>
-            </div>
+            </div> */}
 
             <Link href="/privacy-policy">
               <a className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600">

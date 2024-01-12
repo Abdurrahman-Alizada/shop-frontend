@@ -22,6 +22,7 @@ const Layout = ({ title, description, children }) => {
           </title>
           {description && <meta name="description" content={description} />}
           <link ref="icon" href="/favicon.png" />
+          <meta name="google-site-verification" content="V-SFukfi1LFjijWC64oOfVjzu7dpMuoO2-A_M_naBdU" />
         </Head>
         <NavBarTop />
         <Navbar />
