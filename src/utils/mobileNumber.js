@@ -1,1 +1,1 @@
-export const mobileNumber = "+92 316 1921936"
+export const mobileNumber = "+92 331 9556760"

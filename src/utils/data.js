@@ -174,7 +174,7 @@ const contactData = [
     title: 'contact-page-box1-title',
     info: 'contact-page-box1-info',
     icon: FiMail,
-    contact: 'suddais2017@gmail.com',
+    contact: 'naginayshop@gmail.com',
     className: 'bg-emerald-100',
   },
   {
@@ -182,7 +182,7 @@ const contactData = [
     title: 'contact-page-box2-title',
     info: 'contact-page-box2-info',
     icon: FiPhoneCall,
-    contact: '+92 316 1921936',
+    contact: '+92 331 9556760',
     className: 'bg-yellow-100',
   },
   {
