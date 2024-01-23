@@ -254,7 +254,7 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-2xl px-3 sm:px-10 flex justify-center py-4">
         <p className="text-sm text-gray-500 leading-6">
           Copyright 2023 @{" "}
-          <Link href="https://todayfruit-store.vercel.app/">
+          <Link href="https://naginay.shop">
             <a
               target="_blank"
               rel="noopener noreferrer"

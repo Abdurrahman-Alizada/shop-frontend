@@ -25,7 +25,7 @@ const FooterTop = () => {
             {t("common:footer-top-paragraph-text")}
             </p>
             <div className="mt-8">
-              <Link href="https://todayfruit-store.vercel.app/">
+              <Link href="https://naginay.shop">
                 <a className="mx-2" target="_blank" rel="noreferrer">
                   <Image
                     width={170}
